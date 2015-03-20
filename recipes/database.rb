@@ -24,7 +24,7 @@ end
 mysql_database_user node['wordpress-simple']['dbuser'] do
   connection mysql_connection_info
   password node['wordpress-simple']['dbpassword']
-  host '*'
+  host '%'
   database_name node['wordpress-simple']['dbname']
   action :create
 end
