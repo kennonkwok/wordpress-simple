@@ -1,3 +1,5 @@
+include_recipe 'selinux::disabled'
+
 mysql2_chef_gem 'default' do
   action :install
 end

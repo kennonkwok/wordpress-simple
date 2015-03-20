@@ -6,6 +6,7 @@ description      'Installs/Configures wordpress-simple'
 long_description 'Installs/Configures wordpress-simple'
 version          '0.1.0'
 
+depends 'selinux'
 depends 'mysql2_chef_gem'
 depends 'mysql'
 depends 'database'
