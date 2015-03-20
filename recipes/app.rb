@@ -1,3 +1,4 @@
+include_recipe 'wordpress-simple::disable_iptables'
 
 package 'httpd'
 package 'php'

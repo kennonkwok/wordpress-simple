@@ -1,4 +1,5 @@
 include_recipe 'selinux::disabled'
+include_recipe 'wordpress-simple::disable_iptables'
 
 mysql2_chef_gem 'default' do
   action :install
